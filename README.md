@@ -39,7 +39,6 @@ NEXT_PUBLIC_NEWT_APP_UID=landing-page
 NEXT_PUBLIC_NEWT_API_TOKEN=CDN APIトークン
 NEXT_PUBLIC_NEWT_API_TYPE=cdn
 NEXT_PUBLIC_NEWT_PAGE_MODEL_UID=landing-page
-
 ```
 
 Next.js における環境変数の扱いについては、[公式ドキュメント](https://nextjs.org/docs/app/building-your-application/configuring/environment-variables)を参照してください。
