@@ -1,0 +1,55 @@
+.Faq_Item {
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  margin: 0 0 16px 0;
+  padding: 0;
+  overflow: hidden;
+}
+.Faq_Item > dt {
+  margin: 0;
+  padding: 16px 20px;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+  line-height: 1.4;
+}
+.Faq_Item > dt > em {
+  width: 30px;
+  font-style: normal;
+  font-size: 2rem;
+  flex-shrink: 0;
+  font-weight: normal;
+}
+.Faq_Item > dt > span {
+  margin: 4px 16px 0 0;
+}
+.Faq_Item > dt > svg {
+  margin: 0 0 0 auto;
+  flex-shrink: 0;
+}
+.Faq_Item > dd {
+  margin: 0;
+  padding: 8px 20px;
+  border-top: 1px solid #e5e5e5;
+  display: flex;
+  background: #f8f8f8;
+}
+.Faq_Item > dd > em {
+  width: 30px;
+  font-style: normal;
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+.Faq_Item > dd > span {
+  margin: 6px 0;
+}
+@media (min-width: 600px) {
+  .Faq_Item > dt {
+    font-size: 1.6rem;
+    padding: 24px 28px;
+  }
+  .Faq_Item > dd {
+    padding: 16px 28px;
+  }
+}

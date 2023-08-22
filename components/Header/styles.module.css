@@ -1,0 +1,71 @@
+.Header {
+  top: 0;
+  background: #fff;
+  z-index: 2;
+  position: sticky;
+  width: calc(100% - 22px);
+  padding: 8px 8px 8px 14px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+}
+.Header_Inner {
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+@media (min-width: 600px) {
+  .Header {
+    padding: 9px 60px;
+    width: calc(100% - 120px);
+  }
+}
+.Title {
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  align-items: center;
+  min-width: 0;
+}
+.Title_Icon {
+  width: 20px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  flex-shrink: 0;
+  margin: 0 10px -2px 0;
+}
+.Title_Icon img {
+  width: 26px;
+  height: 26px;
+  object-fit: cover;
+  font-family: 'object-fit: cover'; /* IE11 */
+  border-radius: 4px;
+}
+.Title_Text {
+  font-size: 1.6rem;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.Link {
+  margin: 0 0 0 auto;
+  display: none;
+}
+.Link > a {
+  color: #666;
+  text-decoration: none;
+  transition: color 0.2s;
+  padding: 3px 12px;
+}
+.Link > a:hover {
+  color: #333;
+}
+@media (min-width: 600px) {
+  .Link {
+    display: block;
+  }
+}

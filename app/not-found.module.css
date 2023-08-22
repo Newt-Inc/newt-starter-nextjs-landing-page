@@ -1,0 +1,17 @@
+.Error {
+  flex: 1 auto;
+  height: calc(100vh - 110px);
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Error_Emoji {
+  font-size: 4rem;
+  line-height: 1;
+  margin: 0 0 16px 0;
+}
+.Error_Link {
+  font-size: 1.4rem;
+}
