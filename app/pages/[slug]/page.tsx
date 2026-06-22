@@ -10,9 +10,9 @@ import { Logo } from '@/components/Logo'
 import { getPages, getPage } from '@/lib/newt'
 
 type Props = {
-  params: {
+  params: Promise<{
     slug: string
-  }
+  }>
 }
 
 export async function generateStaticParams() {
@@ -24,7 +24,7 @@ export async function generateStaticParams() {
 export const dynamicParams = false
 
 export async function generateMetadata({ params }: Props) {
-  const { slug } = params
+  const { slug } = await params
   const page = await getPage(slug)
 
   const title = page?.meta?.title || page?.pageName
@@ -44,7 +44,7 @@ export async function generateMetadata({ params }: Props) {
 }
 
 export default async function Page({ params }: Props) {
-  const { slug } = params
+  const { slug } = await params
   const page = await getPage(slug)
   if (!page) {
     notFound()
